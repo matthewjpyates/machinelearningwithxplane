@@ -1,0 +1,83 @@
+<?xml version="1.0">
+<plugin>
+	<settings name="xmlPluginTest" recordRate="1.0" stepRate=".03125" 
+		reloadEveryRun="true" reloadEveryChange="false" debug="false">
+	</settings>
+	<measures>
+	</measures>
+	<runresets>
+	</runresets>
+	<recordresets>
+	</recordresets>
+	<stepresets>
+		<stepreset dataref="sim/flightmodel/misc/wing_tilt_roll"  value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/sbrkrat"     value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/l_brake_add" value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/r_brake_add" value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/lail1def"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/lail2def"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/rail1def"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/rail2def"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/ldruddef"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/rdruddef"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/lsplrdef"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/rsplrdef"    value="0"> </stepreset>
+		<stepreset dataref="sim/flightmodel/controls/sbrkrqst"    value="0"> </stepreset>
+		<stepreset dataref="sim/cockpit2/controls/rudder_trim"    value="0"> </stepreset>
+		<stepreset dataref="roll"                                 value="0"> </stepreset>
+	</stepresets>
+	<samples>
+	</samples>
+	<runbuttons>
+	</runbuttons>
+	<recordbuttons>
+		<button>xplm_joy_throt_up</button>
+	</recordbuttons>
+	<stepbuttons>
+		<button>xplm_joy_rud_cntr</button>
+		<button>xplm_joy_tim_reset</button>
+	</stepbuttons>
+
+	<runkeys>
+		<key>xplm_key_brakesreg</key>
+	</runkeys>
+	<recordkeys>
+	</recordkeys>
+	<stepkeys>
+	</stepkeys>
+	<learned>
+		<learn dataref="sim/flightmodel/controls/elv_trim">
+			<listref>
+				<measure>elevation</measure>
+				<measure>speed</measure>
+				<measure>pitch</measure>
+				<measure>sim/flightmodel/controls/elv_trim</measure>
+			</listref>
+			<listoptions>
+				<option>-1</option>
+				<option>-.5</option>
+				<option>0.0</option>
+				<option>.5</option>
+				<option>1</option>
+			</listoptions>
+			<listsweights>
+				<weights>
+					<weight>10.538238</weight><weight>42.576692</weight><weight>39.775909</weight><weight>-43.085447</weight>
+				</weights>
+				<weights>
+					<weight>10.800214</weight><weight>42.667697</weight><weight>34.833414</weight><weight>-35.141343</weight>
+				</weights>
+				<weights>
+					<weight>11.200617</weight><weight>42.688221</weight><weight>41.517732</weight><weight>-39.328462</weight>
+				</weights>
+				<weights>
+					<weight>11.385997</weight><weight>43.219353</weight><weight>52.707823</weight><weight>-31.414259</weight>
+				</weights>
+				<weights>
+					<weight>11.565604</weight><weight>44.825834</weight><weight>60.415289</weight><weight>-45.859525</weight>
+				</weights>
+
+			</listsweights>
+		</learn>
+	</learned>
+</plugin>

@@ -1,0 +1,6 @@
+make -f USNAMachineLearning.mk USNAMachineLearning.xpl TARGET=USNAMachineLearning.xpl\
+ CC="g++"  LD="g++"  AR="ar -crs"  SIZE="size" LIBS+="-lGL -lGLU"
+make[1]: Entering directory `/home/m137428/xplaneDev/pitchandroll/tinyxml'
+gcc -c -fPIC -iquote./ -iquoteSDK/CHeaders/XPLM -iquoteSDK/CHeaders/Widgets -iquote- -iquote/usr/include/ -DIBM=0 -DAPL=0 -DLIN=1 -O0 -x c++ -ansi -m32 /home/m137428/xplaneDev/pitchandroll/tinyxml/USNAMachineLearning.cpp -o /home/m137428/xplaneDev/pitchandroll/tinyxml/USNAMachineLearning.cpp.o -MMD
+g++ -m32 -shared  -o USNAMachineLearning.xpl /home/m137428/xplaneDev/pitchandroll/tinyxml/USNAMachineLearning.cpp.o /home/m137428/xplaneDev/pitchandroll/tinyxml/tinyxml.cpp.o /home/m137428/xplaneDev/pitchandroll/tinyxml/tinystr.cpp.o /home/m137428/xplaneDev/pitchandroll/tinyxml/tinyxmlerror.cpp.o /home/m137428/xplaneDev/pitchandroll/tinyxml/tinyxmlparser.cpp.o -lGL -lGLU
+make[1]: Leaving directory `/home/m137428/xplaneDev/pitchandroll/tinyxml'

@@ -1,0 +1,36 @@
+dataref the has been learnedThese get reset per run
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+These get reset per record
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+These get reset per step
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+Things that get measured
+some dataref 1
+some dataref 2
+some dataref 3
+Things that get changed
+the data ref to be changed: 0.3 0.6 0.9 
+Values that have been learned
+dataref the has been learned: dataref ref read from 1 0.33 dataref ref read from 2 0.63 These are the choices
+0.32
+0.62
+0.92
+Settings
+xmlPluginTest
+1
+0.25
+0
+0
+0

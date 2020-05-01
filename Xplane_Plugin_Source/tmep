@@ -1,0 +1,133 @@
+Document
++ Declaration
++ Element [plugin]
+ (No attributes)
+  + Element [settings]
+    + name: value=[xmlPluginTest]
+    + recordRate: value=[1.0] int=1 d=1.0
+    + stepRate: value=[.25] d=0.2
+    + reloadEveryRun: value=[false]
+    + reloadEveryChange: value=[false]
+    + debug: value=[false]
+    6 attributes
+  + Element [measures]
+ (No attributes)
+    + Element [measure]
+ (No attributes)
+      + Text: [some dataref 1]
+    + Element [measure]
+ (No attributes)
+      + Text: [some dataref 2]
+    + Element [measure]
+ (No attributes)
+      + Text: [some dataref 3]
+  + Element [runresets]
+ (No attributes)
+    + Element [runreset]
+      + dataref: value=[some dataref 4]
+      + value: value=[.25] d=0.2
+      2 attributes
+    + Element [runreset]
+      + dataref: value=[some dataref 5]
+      + value: value=[.75] d=0.8
+      2 attributes
+  + Element [recordresets]
+ (No attributes)
+    + Element [recordreset]
+      + dataref: value=[some dataref 4]
+      + value: value=[.25] d=0.2
+      2 attributes
+    + Element [recordreset]
+      + dataref: value=[some dataref 5]
+      + value: value=[.75] d=0.8
+      2 attributes
+  + Element [stepresets]
+ (No attributes)
+    + Element [stepreset]
+      + dataref: value=[some dataref 4]
+      + value: value=[.25] d=0.2
+      2 attributes
+    + Element [stepreset]
+      + dataref: value=[some dataref 5]
+      + value: value=[.75] d=0.8
+      2 attributes
+  + Element [samples]
+ (No attributes)
+    + Element [sample]
+      + dataref: value=[the data ref to be changed]
+      1 attribute
+      + Element [listoptions]
+ (No attributes)
+        + Element [option]
+ (No attributes)
+          + Text: [.3]
+        + Element [option]
+ (No attributes)
+          + Text: [.6]
+        + Element [option]
+ (No attributes)
+          + Text: [.9]
+  + Element [learned]
+ (No attributes)
+    + Element [learnedref]
+      + dataref: value=[dataref the has been learned]
+      1 attribute
+      + Element [listref]
+ (No attributes)
+        + Element [dataref]
+ (No attributes)
+          + Text: [dataref ref read from 1]
+        + Element [dataref]
+ (No attributes)
+          + Text: [dataref ref read from 2]
+      + Element [listoptions]
+ (No attributes)
+        + Element [option]
+ (No attributes)
+          + Text: [.32]
+        + Element [option]
+ (No attributes)
+          + Text: [.62]
+        + Element [option]
+ (No attributes)
+          + Text: [.92]
+      + Element [listweights]
+ (No attributes)
+        + Element [weight]
+ (No attributes)
+          + Text: [.33]
+        + Element [weight]
+ (No attributes)
+          + Text: [.63]
+        + Element [weight]
+ (No attributes)
+          + Text: [.93]
+dataref the has been learnedThese get reset per run
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+These get reset per record
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+These get reset per step
+some dataref 4
+some dataref 5
+Values they get assigned
+0.25
+0.75
+Things that get measured
+some dataref 1
+some dataref 2
+some dataref 3
+Things that get changed
+the data ref to be changed: 0.3 0.6 0.9 
+Values that have been learned
+dataref the has been learned: dataref ref read from 1 0.33 dataref ref read from 2 0.63 These are the choices
+0.32
+0.62
+0.92
